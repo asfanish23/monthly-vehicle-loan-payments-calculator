@@ -1,0 +1,24 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base Light Theme -->
+    <style name="Base.Theme.Vehicle_Loan_Calc" parent="Theme.Material3.Light.NoActionBar">
+        <!-- warna asas putih -->
+        <item name="android:windowBackground">@color/white</item>
+
+        <!-- Button color -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryContainer">@color/purple_200</item>
+
+        <!-- Shape (round edges) -->
+        <item name="shapeAppearanceSmallComponent">@style/RoundedCorners</item>
+        <item name="shapeAppearanceMediumComponent">@style/RoundedCorners</item>
+        <item name="shapeAppearanceLargeComponent">@style/RoundedCorners</item>
+    </style>
+
+    <style name="RoundedCorners">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20dp</item>
+    </style>
+
+    <style name="Theme.Vehicle_Loan_Calc" parent="Base.Theme.Vehicle_Loan_Calc"/>
+</resources>

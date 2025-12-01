@@ -1,0 +1,50 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/about_logo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:text="Author Information"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="Name: Asfa Danish Bin Hezri\nMatric No: 2023491758\nClass: M3CDCS2515A\nCourse: ICT602"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="© 2025 Asfa Hezri. All Rights Reserved."
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/githubLink"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:layout_marginTop="10dp"
+            android:autoLink="web"
+            android:text="GitHub Repo: https://github.com/asfanish23/monthly-vehicle-loan-payments-calculator"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</ScrollView>
