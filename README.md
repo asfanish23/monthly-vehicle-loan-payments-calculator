@@ -25,30 +25,6 @@ Monthly Payment
 🎨 Adaptive app icon (squircle, gradient purple)
 
 
-🛠️ Tech Stack
-
-Android Studio (Java)
-
-XML Layout
-
-Fragments
-
-Material Components
-
-Adaptive Icon Asset
-
-📂 Project Structure
-app/
- ├─ java/com.example.vehicle_loan_calc/
- │   ├─ MainActivity.java
- │   ├─ HomeFragment.java
- │   └─ AboutFragment.java
- └─ res/
-     ├─ layout/
-     ├─ drawable/
-     ├─ mipmap/
-     └─ values/
-
 📘 How It Works
 
 1.User enters price, downpayment, loan year & interest rate
