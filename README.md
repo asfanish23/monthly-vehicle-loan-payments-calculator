@@ -1,54 +1,72 @@
-📱 Monthly Vehicle Loan Payments Calculator
+<h1 align="center">📱 Monthly Vehicle Loan Payments Calculator</h1>
 
-A simple Android app that helps users calculate car loan monthly payments with clean UI, auto-format numbers, and instant results.
+<p align="center">
+  A clean and simple Android app to calculate <b>monthly car loan payments</b> with auto-formatted inputs and instant results.
+</p>
 
-🚗 Features
+<p align="center">
+  <img src="https://img.shields.io/badge/Platform-Android-green?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Language-Java-blue?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Purpose-Academic-orange?style=for-the-badge">
+</p>
 
-💰 Auto number formatting (e.g., 80000 → 80,000)
+---
 
-🧮 Loan calculations:
+## 🚗 Features
 
-Loan Amount
+- 💰 **Auto Number Formatting**  
+  `80000` → `80,000`
 
-Total Interest
+- 🧮 **Loan Calculation Outputs**  
+  - Loan Amount  
+  - Total Interest  
+  - Total Payment  
+  - Monthly Payment  
 
-Total Payment
+- 🔄 **Reset Button** (clear all fields)
 
-Monthly Payment
+- 🧭 **Bottom Navigation**  
+  - Home  
+  - About Page  
 
-🔄 Reset button to clear all inputs
+- 👤 **About Page**  
+  Displays author info + GitHub link
 
-🧭 Bottom navigation (Home & About)
+- 🎨 **Adaptive App Icon**  
+  Squircle shape + purple gradient
 
-👤 About page with author info + GitHub link
+---
 
-🎨 Adaptive app icon (squircle, gradient purple)
+## 📘 How It Works
 
+1. User enters **car price, downpayment, loan tenure, interest rate**  
+   → App auto-formats numbers
 
-📘 How It Works
+2. User taps **Calculate**  
+   → App displays a full loan breakdown (2-decimal precision)
 
-1.User enters price, downpayment, loan year & interest rate
--App formats numbers automatically
+3. Tap **Reset**  
+   → All fields cleared instantly
 
-2.User taps Calculate
+---
 
-3.App displays loan breakdown with 2-decimal precision
+## 👨‍🎓 Author
 
-4.Reset clears all fields instantly
+**Asfa Danish Bin Hezri**  
+Matric No: *2023491758*  
+Class: *M3CDCS2515A*  
+Course: *ICT602*
 
-👨‍🎓 Author
+🔗 **GitHub Repository**  
+https://github.com/asfanish23/monthly-vehicle-loan-payments-calculator
 
-Asfa Danish Bin Hezri
-Matric No: 2023491758
-Class: M3CDCS2515A
-Course: ICT602
+---
 
-GitHub Repository:
-👉 https://github.com/asfanish23/monthly-vehicle-loan-payments-calculator
+## 📦 License
 
-© 2025 Asfa Hezri. All Rights Reserved.
+This project is developed for **academic use only**.  
+Commercial distribution is **not permitted**.
 
-📦 License
+---
 
-This project is for academic purposes.
-No commercial distribution allowed.
+<p align="center">© 2025 Asfa Hezri — All Rights Reserved</p>
