@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -39,30 +40,43 @@ public class HomeFragment extends Fragment {
         calculate = v.findViewById(R.id.btnCalc);
         reset = v.findViewById(R.id.btnReset);
 
-        // AUTO FORMAT NUMBER
+        // AUTO FORMAT
         addNumberFormatter(price);
         addNumberFormatter(down);
 
-        // CALCULATE BUTTON
+        // ===================== CALCULATE ======================
         calculate.setOnClickListener(view -> {
 
+            // VALIDATION
+            if (price.getText().toString().trim().isEmpty() ||
+                    down.getText().toString().trim().isEmpty() ||
+                    period.getText().toString().trim().isEmpty() ||
+                    rate.getText().toString().trim().isEmpty()) {
+
+                Toast.makeText(getActivity(), "Please fill in all fields", Toast.LENGTH_SHORT).show();
+                return;  // STOP HERE
+            }
+
+            // CLEAN INPUT
             double p = Double.parseDouble(price.getText().toString().replace(",", ""));
             double d = Double.parseDouble(down.getText().toString().replace(",", ""));
             int y = Integer.parseInt(period.getText().toString());
             double r = Double.parseDouble(rate.getText().toString());
 
+            // CALCULATION
             double loan = p - d;
             double interest = loan * (r / 100) * y;
             double total = loan + interest;
             double monthly = total / (y * 12);
 
+            // DISPLAY
             loanAmount.setText("Loan Amount: RM " + String.format("%,.2f", loan));
             totalInterest.setText("Interest: RM " + String.format("%,.2f", interest));
             totalPayment.setText("Total Payment: RM " + String.format("%,.2f", total));
             monthlyPayment.setText("Monthly Payment: RM " + String.format("%,.2f", monthly));
         });
 
-        // RESET BUTTON (BETUL)
+        // ===================== RESET ======================
         reset.setOnClickListener(view -> {
             price.setText("");
             down.setText("");
@@ -78,7 +92,7 @@ public class HomeFragment extends Fragment {
         return v;
     }
 
-    // AUTO FORMAT FUNCTION
+    // =============== AUTO FORMAT NUMBER =================
     private void addNumberFormatter(EditText editText) {
         editText.addTextChangedListener(new TextWatcher() {
 
@@ -97,7 +111,7 @@ public class HomeFragment extends Fragment {
 
                     if (!clean.isEmpty()) {
                         double num = Double.parseDouble(clean);
-                        String formatted = String.format("%,.0f", num); // BETUL
+                        String formatted = String.format("%,.0f", num);
                         current = formatted;
                         editText.setText(formatted);
                         editText.setSelection(formatted.length());
